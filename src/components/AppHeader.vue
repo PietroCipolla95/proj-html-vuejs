@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-3">
             <div class="my_container">
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
                     <!-- dropdown items -->
