@@ -13,92 +13,68 @@ export default {
                         <ul class="navbar-nav mb-2 mb-lg-0 col-4">
                             <!-- home dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Home
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu my_dropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <!-- pages dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Pages
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu my_dropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <!-- courses dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Courses
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu my_dropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <!-- Features dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Features
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu my_dropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <!-- Blog dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Blog
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu my_dropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <!-- Shop dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Shop
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu my_dropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -142,6 +118,17 @@ export default {
 
 .dropdown a {
     font-size: 14px;
+}
+
+.my_dropdown {
+    top: 140%;
+    border-radius: 0;
+    border: 0px;
+}
+
+.dropdown-toggle:hover {
+    color: $coach-green;
+    border-bottom: 1px solid $coach-green;
 }
 
 .cart div {
