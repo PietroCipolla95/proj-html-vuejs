@@ -111,14 +111,19 @@ export default {
                     <div class="col-4 d-flex justify-content-end align-items-center">
                         <!-- shopping cart -->
                         <div class="cart position-relative">
-                            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping fa-lg text-black"></i>
+                            </a>
+                            <!-- counter shopping cart -->
                             <div>
                                 0
                             </div>
                         </div>
                         <!-- user icon -->
                         <div class="ms-4 me-3">
-                            <i class="fa-regular fa-circle-user fa-lg"></i>
+                            <a href="#">
+                                <i class="fa-regular fa-circle-user fa-lg text-black"></i>
+                            </a>
                         </div>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

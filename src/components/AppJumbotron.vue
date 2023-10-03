@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <section class="jumbotron d-flex align-items-center justify-content-center">
+    <section class="jumbotron d-flex align-items-center justify-content-center position-relative">
         <div class="text-center">
             <h3 class="text-light">
                 Commence Business
@@ -15,6 +15,20 @@ export default {
             <button class="btn my_btn fw-bolder px-5 py-3">
                 Download free guidebook &#8594
             </button>
+        </div>
+        <div class="right_menu d-flex flex-column align-items-center">
+            <a href="#">
+                <i class="fa-solid fa-ruler-vertical fa-sm text-black"></i>
+            </a>
+            <a href="#" class="py-3">
+                <i class="fa-solid fa-life-ring fa-sm text-black"></i>
+            </a>
+            <a href="#" class="pb-3">
+                <i class="fa-solid fa-book fa-sm text-black"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping fa-sm text-black"></i>
+            </a>
         </div>
     </section>
 </template>
@@ -36,6 +50,16 @@ export default {
     .my_btn {
         background-color: white;
         color: $coach-green;
+    }
+
+    .right_menu {
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        background-color: white;
+        padding: 1.2rem .8rem;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 
 
