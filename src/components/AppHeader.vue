@@ -13,8 +13,8 @@ export default {
                         <ul class="navbar-nav mb-2 mb-lg-0 col-4">
                             <!-- home dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Home
                                 </a>
                                 <ul class="dropdown-menu my_dropdown">
@@ -24,8 +24,8 @@ export default {
                             </li>
                             <!-- pages dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Pages
                                 </a>
                                 <ul class="dropdown-menu my_dropdown">
@@ -35,8 +35,8 @@ export default {
                             </li>
                             <!-- courses dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Courses
                                 </a>
                                 <ul class="dropdown-menu my_dropdown">
@@ -46,8 +46,8 @@ export default {
                             </li>
                             <!-- Features dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Features
                                 </a>
                                 <ul class="dropdown-menu my_dropdown">
@@ -57,8 +57,8 @@ export default {
                             </li>
                             <!-- Blog dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Blog
                                 </a>
                                 <ul class="dropdown-menu my_dropdown">
@@ -68,8 +68,8 @@ export default {
                             </li>
                             <!-- Shop dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Shop
                                 </a>
                                 <ul class="dropdown-menu my_dropdown">
@@ -121,14 +121,24 @@ export default {
 }
 
 .my_dropdown {
-    top: 140%;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 165%;
     border-radius: 0;
     border: 0px;
+}
+
+.my_toggle {
+    border-bottom: 1px solid white;
 }
 
 .dropdown-toggle:hover {
     color: $coach-green;
     border-bottom: 1px solid $coach-green;
+}
+
+.dropdown-item:hover {
+    background-color: $coach-green;
 }
 
 .cart div {
