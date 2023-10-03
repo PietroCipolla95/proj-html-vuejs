@@ -110,16 +110,18 @@ export default {
                     <!-- searchbar cart and user -->
                     <div class="col-4 d-flex justify-content-end align-items-center">
                         <!-- shopping cart -->
-                        <div>
+                        <div class="cart position-relative">
                             <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            <div>
+                                0
+                            </div>
                         </div>
                         <!-- user icon -->
-                        <div class="mx-3 me-3">
+                        <div class="ms-4 me-3">
                             <i class="fa-regular fa-circle-user fa-lg"></i>
                         </div>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
@@ -130,7 +132,25 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
+
+
 .dropdown a {
     font-size: 14px;
+}
+
+.cart div {
+    color: white;
+    font-size: 13px;
+    background-color: $coach-green;
+    border-radius: 50%;
+    height: 1.2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -50%;
+    left: 80%;
 }
 </style>
