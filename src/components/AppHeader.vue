@@ -11,64 +11,9 @@ export default {
     },
 
     data() {
-
         return {
 
-            items: [
-                {
-                    title: 'Home',
-                    links: [
-                        'About',
-                        'Link 2',
-                        'Link 3'
-                    ]
-                },
-                {
-                    title: 'Pages',
-                    links: [
-                        'About',
-                        'Link 2',
-                        'Link 3'
-                    ]
-                },
-                {
-                    title: 'Courses',
-                    links: [
-                        'About',
-                        'Link 2',
-                        'Link 3'
-                    ]
-                },
-                {
-                    title: 'Features',
-                    links: [
-                        'About',
-                        'Link 2',
-                        'Link 3'
-                    ]
-                },
-                {
-                    title: 'Blog',
-                    links: [
-                        'About',
-                        'Link 2',
-                        'Link 3'
-                    ]
-                },
-                {
-                    title: 'Shop',
-                    links: [
-                        'About',
-                        'Link 2',
-                        'Link 3',
-                        'Link 4',
-                    ]
-                },
-
-            ]
         }
-
-
     }
 
 
@@ -79,7 +24,7 @@ export default {
         <nav class="navbar navbar-expand-lg py-3">
             <div class="my_container">
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                    <!-- dropdown items -->
+                    <!-- dropdown ul wrapper -->
                     <div class="col-4">
                         <ul class="navbar-nav mb-2 mb-lg-0 col-4">
                             <!-- dropdowns -->
