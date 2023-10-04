@@ -1,6 +1,77 @@
 <script>
+
+import AppMenuItems from './AppMenuItems.vue';
+
+
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+
+    components: {
+        AppMenuItems,
+    },
+
+    data() {
+
+        return {
+
+            items: [
+                {
+                    title: 'Home',
+                    links: [
+                        'About',
+                        'Link 2',
+                        'Link 3'
+                    ]
+                },
+                {
+                    title: 'Pages',
+                    links: [
+                        'About',
+                        'Link 2',
+                        'Link 3'
+                    ]
+                },
+                {
+                    title: 'Courses',
+                    links: [
+                        'About',
+                        'Link 2',
+                        'Link 3'
+                    ]
+                },
+                {
+                    title: 'Features',
+                    links: [
+                        'About',
+                        'Link 2',
+                        'Link 3'
+                    ]
+                },
+                {
+                    title: 'Blog',
+                    links: [
+                        'About',
+                        'Link 2',
+                        'Link 3'
+                    ]
+                },
+                {
+                    title: 'Shop',
+                    links: [
+                        'About',
+                        'Link 2',
+                        'Link 3',
+                        'Link 4',
+                    ]
+                },
+
+            ]
+        }
+
+
+    }
+
+
 }
 </script>
 <template>
@@ -11,72 +82,8 @@ export default {
                     <!-- dropdown items -->
                     <div class="col-4">
                         <ul class="navbar-nav mb-2 mb-lg-0 col-4">
-                            <!-- home dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Home
-                                </a>
-                                <ul class="dropdown-menu my_dropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <!-- pages dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu my_dropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <!-- courses dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Courses
-                                </a>
-                                <ul class="dropdown-menu my_dropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <!-- Features dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Features
-                                </a>
-                                <ul class="dropdown-menu my_dropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <!-- Blog dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Blog
-                                </a>
-                                <ul class="dropdown-menu my_dropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <!-- Shop dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Shop
-                                </a>
-                                <ul class="dropdown-menu my_dropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
+                            <!-- dropdowns -->
+                            <AppMenuItems />
                         </ul>
                     </div>
                     <!-- navbar logo -->
@@ -114,32 +121,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
-
-
-.dropdown a {
-    font-size: 14px;
-}
-
-.my_dropdown {
-    padding-top: 0;
-    padding-bottom: 0;
-    top: 165%;
-    border-radius: 0;
-    border: 0px;
-}
-
-.my_toggle {
-    border-bottom: 1px solid white;
-}
-
-.dropdown-toggle:hover {
-    color: $coach-green;
-    border-bottom: 1px solid $coach-green;
-}
-
-.dropdown-item:hover {
-    background-color: $coach-green;
-}
 
 .cart div {
     color: white;
