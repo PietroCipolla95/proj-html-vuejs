@@ -52,6 +52,12 @@ export default {
     .my_btn {
         background-color: white;
         color: $coach-green;
+
+        &:hover {
+            background-color: $coach-green;
+            color: white;
+        }
+
     }
 
     .right_menu {

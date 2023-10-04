@@ -54,7 +54,7 @@ export default {
 
 .upgrade_skills {
 
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 
     .image_bgs {
         height: 700px;
