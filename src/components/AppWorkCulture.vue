@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <section class="work_culture">
+    <section class="work_culture position-relative overflow-hidden">
         <!-- top row -->
         <div class="row">
             <!-- column left with paragraphs -->
@@ -52,7 +52,7 @@ export default {
 
 
         <!-- bottom row -->
-        <div class="row justify-content-center my_mt">
+        <div class="row justify-content-center my_mt ">
             <div class="col-3 text-center">
                 <h2 class="my_green fw-bold">
                     129+
@@ -78,6 +78,10 @@ export default {
                 </p>
             </div>
         </div>
+
+        <!-- bottom half ring, other half in  the next section -->
+        <div class="ring_bg"></div>
+
     </section>
 </template>
 
@@ -87,7 +91,7 @@ export default {
 
 .work_culture {
     margin-top: 5rem;
-    margin-bottom: 8rem;
+    padding-bottom: 8rem;
 
     /* top row */
     .my_bg_img {
@@ -112,6 +116,21 @@ export default {
 
     .my_mt {
         margin-top: 8rem;
+    }
+
+    .ring_bg {
+        height: 50px;
+        aspect-ratio: 1/1;
+        opacity: 50%;
+
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/200px-Orange_circle_100%25.svg.png);
+        background-repeat: no-repeat;
+        background-position: top 30% left 10%;
+        background-size: contain;
+
+        position: absolute;
+        top: 98%;
+        left: 58.5%;
     }
 
 }
