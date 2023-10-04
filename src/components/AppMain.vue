@@ -16,14 +16,14 @@ export default {
         <AppWorkCulture />
 
 
-        <section class="upgrade_skills">
+        <section class="upgrade_skills py-4 position-relative overflow-hidden">
             <div class="row top_bg_ring">
                 <!-- column with image -->
                 <div class="col-7">
                     <img src="../assets/img/stock-full-hd-11-670x450.jpg" alt="">
                 </div>
                 <!-- column with text -->
-                <div class="col-4 position-relative overflow-hidden">
+                <div class="col-4">
                     <h6 class="my_grey pt-5">
                         HOW WE WORK
                     </h6>
@@ -40,11 +40,10 @@ export default {
                             Download free guidebook &#8594
                         </a>
                     </p>
-
-                    <!-- bottom half ring, other half in the previous section -->
-                    <div class="ring_bg"></div>
-
                 </div>
+
+                <!-- bottom half ring, other half in appWorkculture comp -->
+                <div class="ring_bg"></div>
             </div>
         </section>
 
@@ -73,6 +72,7 @@ export default {
 
         position: absolute;
         top: -3%;
+        left: 50%;
     }
 
 }

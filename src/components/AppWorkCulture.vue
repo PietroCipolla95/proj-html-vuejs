@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <section class="work_culture position-relative overflow-hidden">
+    <section class="work_culture">
         <!-- top row -->
         <div class="row">
             <!-- column left with paragraphs -->
@@ -79,10 +79,12 @@ export default {
             </div>
         </div>
 
-        <!-- bottom half ring, other half in  the next section -->
-        <div class="ring_bg"></div>
-
     </section>
+
+    <!-- top half ring, other half on section upgrade skills comp -->
+    <div id="top_half_ring">
+        <div class="ring_bg"></div>
+    </div>
 </template>
 
 
@@ -133,5 +135,26 @@ export default {
         left: 58.5%;
     }
 
+}
+
+#top_half_ring {
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+
+    .ring_bg {
+        height: 50px;
+        aspect-ratio: 1/1;
+        opacity: 50%;
+
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/200px-Orange_circle_100%25.svg.png);
+        background-repeat: no-repeat;
+        background-position: top 30% left 10%;
+        background-size: contain;
+
+        position: absolute;
+        top: 40%;
+        left: 59%;
+    }
 }
 </style>
