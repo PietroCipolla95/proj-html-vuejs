@@ -40,7 +40,7 @@ export default {
 .my_dropdown {
     padding-top: 0;
     padding-bottom: 0;
-    top: 165%;
+    top: 164%;
     border-radius: 0;
     border: 0px;
 }
