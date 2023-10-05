@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <section class="upgrade_skills">
+    <section class="upgrade_skills container">
         <div class="row top_bg_ring">
             <!-- column with image -->
             <div class="col-7 position-relative">
@@ -74,7 +74,6 @@ export default {
         left: -4%;
         top: -12%;
         z-index: -2;
-        color: aqua;
 
         img {
             width: 120px;

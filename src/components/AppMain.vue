@@ -1,7 +1,9 @@
 <script>
 import AppWorkCulture from './AppWorkCulture.vue';
 import AppSkills from './AppSkills.vue';
-import AppCourses from './AppCourses.vue'
+import AppCourses from './AppCourses.vue';
+import AppWave from './AppWave.vue'
+
 
 
 export default {
@@ -11,17 +13,20 @@ export default {
         AppWorkCulture,
         AppSkills,
         AppCourses,
+        AppWave,
     }
 
 }
 </script>
 <template>
-    <main class="container my_width">
+    <main>
         <AppWorkCulture />
 
         <AppSkills />
 
         <AppCourses />
+
+        <AppWave />
 
 
 

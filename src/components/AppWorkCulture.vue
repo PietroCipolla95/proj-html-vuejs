@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <section class="work_culture">
+    <section class="work_culture container">
         <!-- top row -->
         <div class="row">
             <!-- column left with paragraphs -->
