@@ -5,6 +5,8 @@ import AppCourses from './AppCourses.vue';
 import AppWave from './AppWave.vue';
 import AppTestimonials from './AppTestimonials.vue';
 import AppTransformSection from './AppTransformSection.vue';
+import AppBlogs from './AppBlogs.vue';
+import AppNewsletters from './AppNewsletters.vue';
 
 
 export default {
@@ -17,6 +19,8 @@ export default {
         AppWave,
         AppTestimonials,
         AppTransformSection,
+        AppBlogs,
+        AppNewsletters,
     }
 
 }
@@ -34,6 +38,10 @@ export default {
         <AppTestimonials />
 
         <AppTransformSection />
+
+        <AppBlogs />
+
+        <AppNewsletters />
 
 
 

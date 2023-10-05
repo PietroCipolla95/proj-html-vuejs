@@ -111,7 +111,7 @@ export default {
 @use '../assets/scss/partials/variables.scss' as *;
 
 .blogs_wrapper {
-    margin: 8rem 0;
+    margin: 8rem 0 3rem 0;
     padding: 6rem 0;
     background-color: $coach-lightgrey;
 }
@@ -127,6 +127,11 @@ export default {
 
         a {
             text-decoration: none;
+
+        }
+
+        & h4:hover {
+            color: $coach-green;
         }
 
         .card_info {
