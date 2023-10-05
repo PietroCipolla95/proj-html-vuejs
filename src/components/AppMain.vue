@@ -2,7 +2,8 @@
 import AppWorkCulture from './AppWorkCulture.vue';
 import AppSkills from './AppSkills.vue';
 import AppCourses from './AppCourses.vue';
-import AppWave from './AppWave.vue'
+import AppWave from './AppWave.vue';
+import AppTestimonials from './AppTestimonials.vue';
 
 
 
@@ -14,6 +15,7 @@ export default {
         AppSkills,
         AppCourses,
         AppWave,
+        AppTestimonials
     }
 
 }
@@ -27,6 +29,10 @@ export default {
         <AppCourses />
 
         <AppWave />
+
+        <AppTestimonials />
+
+
 
 
 
