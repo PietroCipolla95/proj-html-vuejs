@@ -33,7 +33,7 @@ export default {
 .my_dropdown {
     padding-top: 0;
     padding-bottom: 0;
-    top: 173.5%;
+    top: 172%;
     border-radius: 0;
     border: 0px;
     border-bottom: 4px solid $coach-green;
