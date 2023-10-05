@@ -53,8 +53,13 @@ export default {
                                 <i class="fa-regular fa-circle-user fa-lg text-black"></i>
                             </a>
                         </div>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <form class="d-flex position-relative" role="search">
+                            <input class="form-control my_search" type="search" placeholder="Search.." aria-label="Search">
+
+                            <!-- magn glass inside search form -->
+                            <div class="glass">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -66,6 +71,26 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.my_search {
+    background-color: $coach-white-3;
+    border: 0;
+    height: 45px;
+}
+
+.glass {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    color: $coach-green;
+}
 
 .cart div {
     color: white;
