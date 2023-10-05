@@ -2,8 +2,14 @@
 
 import { footer_items } from "../footer_menu";
 
+import AppFooterItem from "./AppFooterItem.vue";
+
 export default {
     name: 'AppFooter',
+
+    components: {
+        AppFooterItem,
+    },
 
     data() {
         return {
@@ -68,15 +74,9 @@ export default {
                 <div class="col-6">
                     <div class="row">
                         <!-- col -->
-                        <div class="col-3 d-flex flex-column " v-for="item in  footer_items.items"
-                            :class="(item.name === null ? 'my_p' : '')">
-                            <h6 class="text-light fw-semibold">
-                                {{ item.name }}
-                            </h6>
-                            <a v-for="link in  item.links" :href="link.link_url">
-                                {{ link.link_name }}
-                            </a>
-                        </div>
+
+                        <AppFooterItem :item="item" v-for="item in footer_items.items" />
+
                     </div>
                 </div>
             </div>
