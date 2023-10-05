@@ -154,7 +154,7 @@ export default {
 
         position: absolute;
         top: 40%;
-        left: 61%;
+        left: 57%;
     }
 }
 </style>
