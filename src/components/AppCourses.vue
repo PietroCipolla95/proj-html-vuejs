@@ -44,9 +44,19 @@ export default {
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card border-0">
+                    <div class="card border-0 position-relative">
                         <!-- card image -->
                         <img src="../assets/img/stock-full-hd-03-480x298.jpg" alt="">
+
+
+                        <!-- free bookmark absolute-->
+                        <div class="bookmark">
+                        </div>
+                        <!-- free text absolute -->
+                        <div class="bookmark_text text-light fw-bold">FREE</div>
+
+
+                        <!-- card body -->
                         <div class="card-body px-4 pt-4">
                             <!-- price -->
                             <span class="my_green fs-4 fw-bold">
@@ -160,6 +170,29 @@ h1 {
     & h4:hover {
         color: $coach-green;
     }
+}
+
+.bookmark {
+    position: absolute;
+    height: 90px;
+    width: 50px;
+    padding: 0px;
+    top: -4.6%;
+    right: 4.8%;
+    -webkit-transform: rotate(90deg) skew(0deg);
+    transform: rotate(90deg) skew(0deg);
+    border-left: 25px solid rgb(231, 57, 14);
+    border-right: 25px solid rgb(231, 57, 14);
+    border-bottom: 25px solid transparent;
+    border-top-left-radius: 10px;
+
+
+}
+
+.bookmark_text {
+    position: absolute;
+    top: 3%;
+    right: 4%;
 }
 
 .my_circle {
