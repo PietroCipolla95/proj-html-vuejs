@@ -19,6 +19,14 @@ export const footer_items = reactive({
                     link_name: 'About us',
                     link_url: '#',
                 },
+
+            ]
+
+
+        },
+        {
+            name: null,
+            links: [
                 {
                     link_name: 'Success story',
                     link_url: '#',
@@ -31,6 +39,7 @@ export const footer_items = reactive({
                     link_name: 'Contact us',
                     link_url: '#',
                 },
+
             ]
 
 

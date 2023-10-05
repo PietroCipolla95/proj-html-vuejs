@@ -13,7 +13,17 @@ export default {
 }
 </script>
 <template>
-    <footer class="mt-5">
+    <footer class="mt-5 position-relative">
+
+        <!-- go up button -->
+        <a href="#">
+            <button class="btn go_up_btn">
+                <span class="fs-3 text-light">
+                    &#8593;
+                </span>
+            </button>
+        </a>
+
         <div class="container">
             <!-- colums wrapper -->
             <div class="row py-5">
@@ -58,8 +68,8 @@ export default {
                 <div class="col-6">
                     <div class="row">
                         <!-- col -->
-                        <div class="col-6 d-flex flex-column " v-for="item in  footer_items.items"
-                            :class="(item.links.length > 4 ? 'my_m' : '')">
+                        <div class="col-3 d-flex flex-column " v-for="item in  footer_items.items"
+                            :class="(item.name === null ? 'my_p' : '')">
                             <h6 class="text-light fw-semibold">
                                 {{ item.name }}
                             </h6>
@@ -71,7 +81,7 @@ export default {
                 </div>
             </div>
             <!-- copyright -->
-            <div class="row">
+            <div class="row pb-4">
                 <span class="text-center">
                     © 2020 Maxcoach. All Rights Reserveed
                 </span>
@@ -86,6 +96,22 @@ export default {
 
 footer {
     background-color: $coach-footer;
+
+    .my_p {
+        padding-top: 1.2rem;
+    }
+
+    .go_up_btn {
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+        background-color: $coach-green;
+        color: white;
+        border-radius: 50%;
+        height: 60px;
+        aspect-ratio: 1/1;
+    }
+
 
     span {
         color: $coach-grey;

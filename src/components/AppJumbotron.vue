@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <section class="jumbotron d-flex align-items-center justify-content-center position-relative">
+    <section id="jumbotron" class="jumbotron d-flex align-items-center justify-content-center position-relative">
         <!-- central section -->
         <div class="text-center">
             <h3 class="text-light">
