@@ -4,7 +4,7 @@ import AppSkills from './AppSkills.vue';
 import AppCourses from './AppCourses.vue';
 import AppWave from './AppWave.vue';
 import AppTestimonials from './AppTestimonials.vue';
-
+import AppTransformSection from './AppTransformSection.vue';
 
 
 export default {
@@ -15,7 +15,8 @@ export default {
         AppSkills,
         AppCourses,
         AppWave,
-        AppTestimonials
+        AppTestimonials,
+        AppTransformSection,
     }
 
 }
@@ -31,6 +32,8 @@ export default {
         <AppWave />
 
         <AppTestimonials />
+
+        <AppTransformSection />
 
 
 
