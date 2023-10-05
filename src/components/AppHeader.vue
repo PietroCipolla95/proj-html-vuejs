@@ -2,6 +2,8 @@
 
 import AppMenuItems from './AppMenuItems.vue';
 
+import { header_items } from '../header_menu';
+
 
 export default {
     name: 'AppHeader',
@@ -12,7 +14,7 @@ export default {
 
     data() {
         return {
-
+            header_items
         }
     }
 
@@ -28,7 +30,9 @@ export default {
                     <div class="col-4">
                         <ul class="navbar-nav mb-2 mb-lg-0 col-4">
                             <!-- dropdowns -->
-                            <AppMenuItems />
+                            <li class="nav-item dropdown" v-for="item in  header_items.items ">
+                                <AppMenuItems :item="item" />
+                            </li>
                         </ul>
                     </div>
                     <!-- navbar logo -->

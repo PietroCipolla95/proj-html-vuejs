@@ -1,31 +1,24 @@
 <script>
 
-import { header_items } from '../header_menu';
-
-
 export default {
     name: 'AppMenuItems',
 
-    data() {
-        return {
-            header_items,
-        }
+    props: {
+        item: Object,
     },
 
 }
 </script>
 <template>
-    <li class="nav-item dropdown" v-for="item in  header_items.items ">
-        <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            {{ item.title }}
-        </a>
-        <ul class="dropdown-menu my_dropdown">
-            <li v-for="link in  item.links ">
-                <a class="dropdown-item" :href="link.link_url">{{ link.link_name }}</a>
-            </li>
-        </ul>
-    </li>
+    <a class="nav-link dropdown-toggle my_toggle pb-0" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        {{ item.title }}
+    </a>
+    <ul class="dropdown-menu my_dropdown">
+        <li v-for="link in  item.links ">
+            <a class="dropdown-item" :href="link.link_url">{{ link.link_name }}</a>
+        </li>
+    </ul>
 </template>
 
 
